@@ -1,65 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adi.css">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <title>Document</title>
 </head>
 <body>
-  
-<section>
-  <div class="form-box">
+    <header>
 
-    <div class="form-value">
-      <form action="">
+<h2 class="logo">Logo</h2>
+<nav class="navigation">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact-Us</a>
+</nav>
+<button class="btnLogin-popup">Login</button>
+    </header>
 
-        <h2>Login</h2>
-        <div class="input-box">
+    <div class="wrapper">
 
-<ion-icon name="mail-outline"></ion-icon>
-          <input type="email" required>
-          <label for="">Email</label>
-        </div>
+<span class="icon-close">
+    <ion-icon name="close"></ion-icon>
+</span>
 
-        <div class="input-box">
 
-          <ion-icon name="lock-closed-outline"></ion-icon>
-          <input type="password" required>
-          <label for="">Password</label>
-        </div>
 
-        <div class="forget">
-          <label for=""><input type="checkbox">Remember &nbsp; </label>
-          <a href="https://www.google.com/" class="adi1">Forget Password</a>
+        <div class="form-box login"><h2>LOGIN</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label for="">Email</label>
+               
+            </div>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon">  <ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+
+                    <label for="">Password</label>
+               
+            </div>
+            <div class="remember-forget">
+                <label for=""><input type="checkbox">remember</label>
+                <a href="#">Forgot Password</a>
+            </div>
+            <button type="submit" class="Btn">LOGIN</button>
+            <div class="login-register">
+                <p>Don't have an account ?<a href="#" class="register-link">Register</a></p>
+            </div>
+        </form>
         
-        </div>
-
-        <button class="adi">Log in</button>
-
-        <div class="register">
-
-          <p>Don't have an account ? <a href="#">Register</a></p>
-
-        </div>
-
-      </form>
     </div>
-  </div>
-</section>
 
 
+    <div class="form-box register">
+        <h2 >Register</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label for="">Username</label>
+               
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label for="">Email</label>
+               
+            </div>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon">  <ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+
+                    <label for="">Password</label>
+               
+            </div>
+            <div class="remember-forget">
+                <label for=""><input type="checkbox">I agree to the terms & conditions</label>
+               
+            </div>
+            <button type="submit" class="btn">REGISTER</button>
+            <div class="login-register">
+                <p>Already have an account ?<a href="#" class="login-link">Login</a></p>
+            </div>
+        </form>
+        
+    </div>
+    </div>
+
+<script src="adi.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 </html>
